@@ -1,8 +1,7 @@
 @font-face {
   font-family: "Richis Stiller";
-  src: url("./Fonts/Richis Stiller.otf") format("opentype");
+  src: url("./Richis Stiller.otf") format("opentype");
 }
-
 
 * {
   margin: 0;
