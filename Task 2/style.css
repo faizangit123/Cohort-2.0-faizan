@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(./wallpaper/tanjiro-kamado.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 100%;
+  width: 100%;
+}
+
+#bg {
+  padding-top: 31%;
+}
+
+#h-top {
+  text-align: center;
+  margin-right: 460px;
+
+  font-size: 230%;
+
+  font-weight: bolder;
+  font-family: AnandaBlack;
+}
+
+#h-bottom {
+  font-family: AnandaBlack;
+
+  text-align: center;
+  margin-left: 50px;
+
+  font-size: 230%;
+  font-weight: bolder;
+}
+
+button {
+  margin-top: 0;
+  margin-left: 350px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(
+    to right bottom,
+    rgb(125, 255, 253),
+    rgb(255, 152, 152)
+  );
+}
+
+button:hover {
+  color: aqua;
+}
+
+@font-face {
+  font-family: AnandaBlack;
+  src: url(./fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+}
+
+.text-gradient {
+  background: linear-gradient(
+    to bottom,
+    #ffff45,
+    #a32e0a 10%,
+    #d2340d,
+    #ffc648
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+}
