@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    
+  background-color: rgb(47, 47, 109);
+}
+
+main{
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.2fr 1fr 1fr 1.2fr;
+  gap: 10px;
+  grid-template-areas:
+    "left-top  top-left  top-right  right-top"
+    "left-top    center  center    right-top"
+    "left-mid   center  center  right-bottom"
+    "left-bottom   left-bottom  bottom-mid right-bottom";
+}
+
+main div{
+  border-radius: 20px;
+}
+#center{
+grid-area: center;
+background-color: aliceblue;
+}
+
+#left-top{
+  grid-area: left-top;
+  background-color: antiquewhite;
+}
+
+#left-mid{
+  grid-area: left-mid;
+  background-color: aqua;
+}
+
+#left-bottom{
+  grid-area: left-bottom;
+  background-color: blue;
+
+}
+
+#top-left{
+  grid-area: top-left;
+  background-color: blueviolet;
+}
+
+#top-right{
+  grid-area: top-right
+  ;
+  background-color: brown;
+}
+
+#bottom-mid{
+  grid-area: bottom-mid;
+  background-color: cadetblue;
+}
+
+#right-top{
+  grid-area: right-top;
+  background-color: chocolate;
+}
+
+#right-bottom{
+  grid-area: right-bottom;
+  background-color: chartreuse;
+}
+
+main img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}

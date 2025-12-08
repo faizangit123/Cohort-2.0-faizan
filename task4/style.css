@@ -1,0 +1,194 @@
+@font-face {
+  font-family: pro-display;
+  src: url(./sf-pro-display_regular.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  overflow-x: hidden;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f7;
+}
+
+#navBar {
+  height: 45px;
+  width: 100%;
+  background-color: #161617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  position: fixed;
+  z-index: 99;
+}
+
+#navBar a {
+  font-size: 11px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+#navBar i {
+  color: white;
+}
+
+#center {
+  overflow-x: hidden;
+  position: absolute;
+  height: 95%;
+  width: 100%;
+  background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_mediumtall.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: pro-display;
+  padding-bottom: 400px;
+  font-weight: 100;
+  padding-top: 80px;
+}
+
+#center > h1 {
+  color: white;
+  font-size: 50px;
+}
+
+#center > h5 {
+  font-weight: 100;
+  color: white;
+  font-size: 28px;
+}
+
+#blinks {
+  overflow-x: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 17px;
+}
+
+#blinks > button {
+  margin-top: 12px;
+  padding: 12px 18px;
+  border-radius: 50px;
+  background-color: #0077ed;
+  color: white;
+  font-weight: 10px;
+  font-size: 18px;
+  border: none;
+}
+
+.iphoneair {
+  z-index: 3;
+  overflow: hidden;
+  overflow-x: hidden;
+
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 117%;
+  font-family: pro-display;
+}
+
+.iphoneair > h1 {
+  z-index: 3;
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.iphoneair > p {
+  z-index: 3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 360px;
+  font-size: 28px;
+  z-index: 3;
+}
+
+.blink2 {
+  overflow-x: hidden;
+
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 17px;
+}
+
+.blink2 > button {
+  z-index: 3;
+  margin-top: 12px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  background-color: #0077ed;
+  color: #f5f5f7;
+  font-size: 15px;
+  border: none;
+}
+
+.main2 {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f7;
+  overflow-x: hidden;
+}
+
+img {
+  margin-top: 345px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+}
+
+.img2 {
+  zoom: 125%;
+}
+
+#two-row-top {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#two-row-mid {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#two-row-bottom {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}

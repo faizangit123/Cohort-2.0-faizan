@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alloy Navigation Bar</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-800 antialiased">
+    <!-- Wrapper to center and pad the navigation bar -->
+    <div>
+        <!-- Main Navigation Container -->
+        <nav>
+            <!-- Flex container for all nav items -->
+            <div class="flex items-center justify-between">
+                
+                <!-- Left Section: Logo and Mid-links -->
+                <div class="flex items-center space-x-10">
+                    <!-- Logo -->
+                    <a href="#" class="flex items-center space-x-2 shrink-0">
+                        <span class="px-8 font-bold text-2xl text-gray-900">alloy</span>
+                    </a>
+
+                    <!-- Mid Navigation Links (Hidden on small screens) -->
+                    <ul class="hidden md:flex items-center space-x-8">
+                        <li>
+                            <a href="#" class="flex items-center text-gray-600 hover:text-gray-900 font-medium">
+                                Products
+                                <!-- Dropdown Arrow -->
+                                <svg class="w-4 h-4 text-gray-500 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Integrations</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Recipes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-gray-600 hover:text-gray-900 font-medium">
+                                Resources
+                                <!-- Dropdown Arrow -->
+                                <svg class="w-4 h-4 text-gray-500 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Section: Auth Links and Button -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Book Demo</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Login</a>
+                    <a href="#" class="flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
+                        <span>Try it free</span>
+                        <!-- Button Arrow Icon -->
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (Visible on small screens) -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-700 p-2 rounded-md hover:bg-gray-100">.
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+</body>
+</html>
