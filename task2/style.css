@@ -16,34 +16,32 @@ body {
 }
 
 #bg {
-  padding-top: 31%;
+  padding-top: 23%;
+  padding-right: 20%;
 }
 
 #h-top {
   text-align: center;
   margin-right: 460px;
-
-  font-size: 230%;
-
+  font-size: 100px;
   font-weight: bolder;
   font-family: AnandaBlack;
 }
 
 #h-bottom {
   font-family: AnandaBlack;
-
   text-align: center;
   margin-left: 50px;
-
-  font-size: 230%;
+  font-size: 100px;
   font-weight: bolder;
 }
 
 button {
   margin-top: 0;
-  margin-left: 350px;
-  padding: 5px 10px;
-  border-radius: 10px;
+  margin-left: 700px;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 50px;
   border: none;
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;

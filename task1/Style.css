@@ -52,7 +52,7 @@ h3{
 #p-top {
   color: white;
   text-align: center;
-  font-size: x-small;
+  /* font-size: x-small; */
   font-weight: 100;
 }
 
@@ -60,46 +60,47 @@ h3{
   color: black;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: x-small;
+  /* font-size: x-small; */
 
 }
 
 .div1,.div2,.div3,.div4,.div5 {
   text-align: center;
+  align-items: center;
   margin: 50px;
-  margin-top: 20px;
+  margin-top: 20px; 
   border-radius: 5px;
-  width: 660px;
 }
 
 .div2{
-  height:120px;
+  height:200px;
   background-color: rgb(203, 236, 247);
 }
 
 .in-p{
  background-color: white;
-  width: 320px;
-  height: 21px;
+  /* width: 320px; */
+  height: 40px;
   border-radius: 5px;
   margin-left: 160px;
-  padding: 5px;
+  margin-right: 160px;
+  padding: 10px;
 margin-bottom: 4px;
-  font-size: xx-small;
+  /* font-size: xx-small; */
 }
 
 .div3{
- height: 170px;
+ height:240px;
   background-color: rgb(255, 255, 187)
 }
 
 .div4{
- height: 140px;
+ height: 200px;
   background-color: rgb(255, 210, 217)
 
 }
 
 .div5{
-  height: 140px;
+  height: 200px;
   background-color: rgb(193, 255, 193)
 }
