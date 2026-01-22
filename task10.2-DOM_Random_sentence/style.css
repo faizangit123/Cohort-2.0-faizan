@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  position: relative;
+  padding: 12px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  z-index: 9;
+  color: white;
+}
+
+button:active {
+  scale: 0.95;
+}
+
+div {
+  white-space: nowrap;
+}
