@@ -22,7 +22,7 @@ body {
 }
 
 .card1 {
-position: relative;
+  position: relative;
   height: 400px;
   width: 270px;
   background-color: white;
