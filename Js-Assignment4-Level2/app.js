@@ -163,9 +163,4 @@ console.log(obj3.user.address.city)
 
 
 
-
-
-
-
-
 // Note: “Configured GA4 with a focus on understanding web traffic and user behavior for a production-deployed React application.”
