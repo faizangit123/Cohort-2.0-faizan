@@ -1,0 +1,87 @@
+What does DSA mean?
+DSA = Data Structures + Algorithms
+
+That's it.
+
+Data Structure : 
+A data structure is simply a way of organizing/storing data.
+
+For example: you have many numbers and you could store them in js array
+
+like let numbers = [10, 20, 30, 40, 50];
+
+Here:
+numbers is a data structure.
+More Specifically, it's an array.
+------------------------------------------------------------------
+What is an algorithm?
+An algorithm is simply a step-by-step method for solving a problem.
+
+Imagine I ask:
+Find the biggest number from [10, 25, 7, 40, 18].
+
+You might think:
+
+Start with 10.
+Compare it with 25.
+25 is bigger → remember 25.
+Compare 25 with 7.
+25 is bigger.
+Compare 25 with 40.
+40 is bigger → remember 40.
+Compare 40 with 18.
+40 is the biggest.
+
+Those steps are an algorithm.
+
+So:
+Data Structure = where/how we store data
+Algorithm = how we solve a problem using that data
+------------------------------------------------------------------
+
+JavaScript arrays start at index 0.
+Value:    10    20    30
+Index:     0     1     2
+
+numbers[3] -> doesn't exist.
+-----------------------------------------------------------------
+
+first DSA problem
+Find the largest number: Think like a human
+If I give you: 10, 25, 7, 40, 18
+
+"I'll initially consider the first element as the largest. Then I'll iterate through the remaining elements and compare each one with the current largest. If I find a larger element, I'll update the largest value."
+
+you naturally do:
+"I'll assume 10 is the biggest."
+
+Then:
+"25 is bigger than 10, so now 25 is the biggest."
+
+Then:
+"7 isn't bigger than 25."
+
+Then:
+"40 is bigger than 25."
+
+Then:
+"18 isn't bigger than 40."
+
+Answer:
+40
+We can translate that into code
+-------------------------------------------------------------
+Imp concept: numbers.length
+const numbers = [10, 25, 7, 40, 18];
+know that number.length give : 5 because there are five element 
+and for:      Index:  0  1  2  3  4
+              Value: 10 25  7 40 18
+
+means : The length is 5, but the last index is 4
+this is why we write : i < numbers.length not i <= numbers.length Because numbers[5] doesn't exist.
+--------------------------------------------------------------------
+Now Big-O
+This loop will run 4 times so big O(n) -> O(4)
+
+Here n means:
+number of elements/input size
