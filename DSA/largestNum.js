@@ -43,12 +43,14 @@
  * 
  */
 
-// -----------------------------------------------
-const num = [10,20,50,40,30,90,1]
-let largest = num[0];
-for(let i=1; i<num.length; i++){
-  if(num[i] < largest){
-    largest = num[i]
+//-----
+const numbers1 = [10, 25, 7, 40, 18];
+
+let largest1 = numbers1[0];
+
+for (let i = 1; i < numbers1.length; i++) {
+  if (numbers1[i] > largest1) {
+    largest1 = numbers1[i];
   }
 }
-console.log(largest)
+console.log(largest1);
