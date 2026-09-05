@@ -44,13 +44,12 @@
  */
 
 //-----
-const numbers1 = [10, 25, 7, 40, 18];
 
-let largest1 = numbers1[0];
-
-for (let i = 1; i < numbers1.length; i++) {
-  if (numbers1[i] > largest1) {
-    largest1 = numbers1[i];
-  }
+//(3) Calculate the sum of all numbers using a loop.
+const numbers4 = [10, 20, 30, 40, 50];
+let sum = 0;
+for (let i = 0; i < numbers4.length; i++) {
+  sum = sum + numbers4[i]; // 0 = 0 + 10, 10 = 10 +20
+  total = sum 
 }
-console.log(largest1);
+console.log(sum)
