@@ -43,15 +43,12 @@
  * 
  */
 
-//-----
-
-
-//(2) Find the smallest number using a loop.
-const numbers3 = [8, 15, 3, 22, 7, 19];
-let smallest = numbers3[0];
-for (let i = 1; i < numbers3.length; i++) {
-  if (numbers3[i] < smallest) {
-    smallest = numbers3[i];
-  }
+//LINK - -----
+//!SECTION(3) Calculate the sum of all numbers using a loop.
+const numbers4 = [10, 20, 30, 40, 50];
+let sum = 0;
+for (let i = 0; i < numbers4.length; i++) {
+  sum = sum + numbers4[i]; // 0 = 0 + 10, 10 = 10 +20
+  total = sum 
 }
-console.log(smallest);
+console.log(sum)
