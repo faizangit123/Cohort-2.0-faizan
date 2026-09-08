@@ -34,21 +34,15 @@
 // let sum = 0;
 // for (let i = 0; i < numbers4.length; i++) {
 //   sum = sum + numbers4[i]; // 0 = 0 + 10, 10 = 10 +20
-//   total = sum 
+//   total = sum
 // }
 // console.log(sum)
 
 // (4) Print every element using a loop.
-/**
- * 
- */
 
-//LINK - -----
-//!SECTION(3) Calculate the sum of all numbers using a loop.
-const numbers4 = [10, 20, 30, 40, 50];
-let sum = 0;
-for (let i = 0; i < numbers4.length; i++) {
-  sum = sum + numbers4[i]; // 0 = 0 + 10, 10 = 10 +20
-  total = sum 
+const numbers = [10, 20, 30, 40, 50];
+
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
 }
-console.log(sum)
+//This is called traversing an array.

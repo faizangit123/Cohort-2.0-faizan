@@ -77,6 +77,13 @@ know that number.length give : 5 because there are five element
 and for:      Index:  0  1  2  3  4
               Value: 10 25  7 40 18
 
+              i = 0 → 0 < 5 → yes
+              i = 1 → 1 < 5 → yes
+              i = 2 → 2 < 5 → yes
+              i = 3 → 3 < 5 → yes
+              i = 4 → 4 < 5 → yes
+              i = 5 → 5 < 5 → NO → stop
+
 means : The length is 5, but the last index is 4
 this is why we write : i < numbers.length not i <= numbers.length Because numbers[5] doesn't exist.
 --------------------------------------------------------------------
@@ -85,3 +92,13 @@ This loop will run 4 times so big O(n) -> O(4)
 
 Here n means:
 number of elements/input size
+
+---------------------------------------------------------------
+DATE : 8-9-26
+That's your first DSA pattern
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+}
+
+This is called traversing an array.
+Traversal = going through each item in the array, one by one. 
