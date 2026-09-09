@@ -1,3 +1,4 @@
+// All of this also called : Tracing loops.
 // const numbers1 = [10, 25, 7, 40, 18];
 
 // let largest1 = numbers1[0];
@@ -40,9 +41,30 @@
 
 // (4) Print every element using a loop.
 
-const numbers = [10, 20, 30, 40, 50];
+// const numbers = [10, 20, 30, 40, 50];
 
-for (let i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
-}
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(numbers[i]);
+// }
 //This is called traversing an array.
+
+// Sum of array
+// const number = [10, 20, 30, 40, 50];
+
+// let sum = 0;
+// for (let i = 0; i < number.length; i++) {
+//   //This pattern is called accumulation:
+//   sum += number[i];
+// }
+// console.log(sum);
+
+// map()
+const numbers = [1, 2, 3, 4];
+
+const result = numbers.map((num) => {
+  return num * 2;
+});
+console.log(numbers); // orignal array
+console.log(result); // new array
+
+// short hand version : numbers.map(num => num * 2);

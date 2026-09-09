@@ -96,9 +96,51 @@ number of elements/input size
 ---------------------------------------------------------------
 DATE : 8-9-26
 That's your first DSA pattern
-for (let i = 0; i < array.length; i++) {
+for (let i = 0; i < arraylength; i++) {
     console.log(array[i]);
 }
 
 This is called traversing an array.
 Traversal = going through each item in the array, one by one. 
+
+Array traversal → start at 0 → continue while i < arraylength → increment i.
+
+----------------------------------------------------------------------
+DAY 9-9-26:
+next dsa concept is :-> "Accumulation"
+This pattern is called Accumulation:
+
+sum = sum + numbers[i];
+
+Now : 
+The pattern to remember
+For finding the largest number:
+Idea: Assume the first value is the largest, then replace max whenever you find something bigger.
+
+Now : Map
+map() goes through every element of an array, does something to each element(like what we want it to do), and creates a NEW array containing the results.
+
+and 
+
+"map() is an array method that iterates over each element, transforms it using a callback function, and returns a new array containing the transformed values."
+
+Remember: the callback can receive both the element and its index.
+array.map(function(element, index) {
+    // element = current value
+    // index = current position
+});
+
+Original array
+     ↓
+  [1, 2, 3, 4]
+     ↓
+Do something to EACH value
+     ↓
+    ×2
+     ↓
+[2, 4, 6, 8]
+
+NOW 3 :->
+map() : Transform every element.
+filter() : Keep only elements that satisfy a condition.
+reduce() : Combine all elements into one final value.
