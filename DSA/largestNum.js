@@ -59,12 +59,103 @@
 // console.log(sum);
 
 // map()
-const numbers = [1, 2, 3, 4];
+// const numbers = [1, 2, 3, 4];
 
-const result = numbers.map((num) => {
-  return num * 2;
-});
-console.log(numbers); // orignal array
-console.log(result); // new array
+// const result = numbers.map((num) => {
+//   return num * 2;
+// });
+// console.log(numbers); // orignal array
+// console.log(result); // new array
 
 // short hand version : numbers.map(num => num * 2);
+
+// prints only the even numbers:
+// const numbers = [10, 21, 33, 40, 52, 67, 80];
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 === 0) {
+//     console.log(numbers[i]);
+//   }
+// }
+
+// Find whether 40 exists in the array.
+// const numbers = [10, 25, 7, 40, 18, 30];
+
+// let found = false;
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] === 50) {
+//     found = true;
+//     break;
+//   }
+// }
+// if (found) {
+//   console.log("40 found");
+// } else {
+//   console.log("40 not found");
+// }
+
+// searches for a number stored in a variable:
+
+// const numbers = [10, 25, 7, 40, 18, 30];
+// let foundIndex = -1;
+// let found = false;
+// const target = 18;
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] === target) {
+//     found = true;
+//     foundIndex = i;
+//     break;}}
+// if (found) {
+//   console.log(`${target} found at index ${foundIndex}`);
+// }
+// else{
+//   console.log(`${target} not found`)
+// }
+
+// Find all indexes where 40 occurs.
+// const numbers = [10, 25, 7, 40, 18, 30, 40, 5];
+// const target = 40;
+// let found = false;
+// let foundIndex = [];
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] === target) {
+//     found = true;
+//     foundIndex.push(i)
+//   }
+// }
+// if (found) {
+//   console.log(`${target} found at index ${foundIndex}`);
+// } else {
+//   console.log(`${target} not found`);
+// }
+
+// count how many times 10 appears.
+
+// const numbers = [10, 20, 10, 30, 40, 10, 50];
+// const target = 10;
+
+// let count = 0;
+// for(let i=0; i<numbers.length; i++){
+//   if(numbers[i] === target){
+//     count++
+//   }
+// }
+// console.log(count)
+
+// DSA Lesson 2 : Finding the second largest
+
+// const numbers = [10, 25, 7, 10, 18, 60];
+
+// let largest = -Infinity;
+// let secondLargest = -Infinity;
+
+// for(let i=0; i<numbers.length; i++){
+//   if(numbers[i]>largest){
+//     secondLargest = largest // Before changing largest, we need to save the old largest:
+//     largest = numbers[i];
+//   }
+//   else if(numbers[i]>secondLargest){
+//     secondLargest = numbers[i]
+//   }
+// }
+// console.log(largest)
+// console.log(secondLargest)
