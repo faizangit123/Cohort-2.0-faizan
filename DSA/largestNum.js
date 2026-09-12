@@ -159,3 +159,20 @@
 // }
 // console.log(largest)
 // console.log(secondLargest)
+
+const num = [10,24, 7, 10, 18,6];
+
+let largest = -Infinity;
+let secondLargest = -Infinity;
+
+for(let i=0; i<num.length; i++){
+  if(num[i]>largest){
+    secondLargest = largest;
+    largest = num[i];
+  }
+  else if(num[i]>secondLargest){
+    secondLargest = num[i];
+  }
+}
+console.log(largest)
+console.log(secondLargest)
