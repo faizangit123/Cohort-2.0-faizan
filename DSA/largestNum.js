@@ -176,3 +176,16 @@ for(let i=0; i<num.length; i++){
 }
 console.log(largest)
 console.log(secondLargest)
+
+
+
+const numbers = [10, 20, 10, 30, 40, 10, 50];
+const target = 10;
+
+let count = 0;
+for(let i=0; i<numbers.length; i++){
+  if(numbers[i] === target){
+    count++
+  }
+}
+console.log(count)
