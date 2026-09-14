@@ -160,32 +160,21 @@
 // console.log(largest)
 // console.log(secondLargest)
 
-const num = [10,24, 7, 10, 18,6];
+// Duplicates should NOT count
+
+const numbers = [10, 25, 25, 7, 40, 18, 40, 30];
 
 let largest = -Infinity;
 let secondLargest = -Infinity;
 
-for(let i=0; i<num.length; i++){
-  if(num[i]>largest){
-    secondLargest = largest;
-    largest = num[i];
+for(let i=0; i<numbers.length; i++){
+  if(numbers[i]>largest){
+    secondLargest = largest && largest !== secondLargest;
+    largest = numbers[i];
   }
-  else if(num[i]>secondLargest){
-    secondLargest = num[i];
+  else if(numbers[i]>secondLargest){
+    secondLargest = numbers[i]
   }
 }
 console.log(largest)
 console.log(secondLargest)
-
-
-
-const numbers = [10, 20, 10, 30, 40, 10, 50];
-const target = 10;
-
-let count = 0;
-for(let i=0; i<numbers.length; i++){
-  if(numbers[i] === target){
-    count++
-  }
-}
-console.log(count)
