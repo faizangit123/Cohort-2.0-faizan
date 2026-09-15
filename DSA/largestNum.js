@@ -162,19 +162,57 @@
 
 // Duplicates should NOT count
 
-const numbers = [10, 25, 25, 7, 40, 18, 40, 30];
+// const numbers = [5, 5, 12, 3, 12, 8, 20, 20, 15];
 
-let largest = -Infinity;
-let secondLargest = -Infinity;
+// let largest = -Infinity;
+// let secondLargest = -Infinity;
 
-for(let i=0; i<numbers.length; i++){
-  if(numbers[i]>largest){
-    secondLargest = largest && largest !== secondLargest;
-    largest = numbers[i];
+// for(let i=0; i<numbers.length; i++){
+//   if(numbers[i]>largest){
+//     secondLargest = largest
+//     largest = numbers[i]
+//   }
+//   else if(numbers[i]>secondLargest && numbers[i]<largest){
+//     secondLargest = numbers[i]
+//   }
+// }
+
+// console.log(largest);
+// console.log(secondLargest);
+
+// const numbers = [10, 10, 10];
+// let largest = -Infinity;
+// let secondLargest = -Infinity;
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] > largest) {
+//     secondLargest = largest;
+//     largest = numbers[i];
+//   } else if (numbers[i] > secondLargest && numbers[i] < largest) {
+//     secondLargest = numbers[i];
+//   }
+//   if(secondLargest === -Infinity){
+//     console.log("Second largest distinct number does not exist");
+//   }
+//   else{
+//     console.log(secondLargest)
+//   }
+// }
+// console.log(largest);
+
+// Write a program that searches for 30 in this array:
+const numbers = [10, 25, 7, 40, 18, 30];
+const target = 18;
+let found = false;
+let foundIndex = -1;
+for (let i = 0; i < numbers.length; i++) {
+  if (target === numbers[i]) {
+    found = true;
+    foundIndex = i;
+    break;
+  }}
+  if(found){
+    console.log(`Target ${target} found at index ${foundIndex}`)
+  }else{
+    console.log("Target not found")
   }
-  else if(numbers[i]>secondLargest){
-    secondLargest = numbers[i]
-  }
-}
-console.log(largest)
-console.log(secondLargest)
+
