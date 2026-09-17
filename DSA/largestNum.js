@@ -199,32 +199,11 @@
 // }
 // console.log(largest);
 
-// Write a program that searches for 30 in this array:
-// const numbers = [10, 25, 7, 40, 18, 30];
-// const target = 18;
-// let found = false;
-// let foundIndex = -1;
-// for (let i = 0; i < numbers.length; i++) {
-//   if (target === numbers[i]) {
-//     found = true;
-//     foundIndex = i;
-//     break;
-//   }}
-//   if(found){
-//     console.log(`Target ${target} found at index ${foundIndex}`)
-//   }else{
-//     console.log("Target not found")
-//   }
-
-//count how many times 10 appears.
-
-const numbers = [10, 20, 10, 30, 40, 10, 50];
-const target = 10;
-
-let count = 0;
-for(let i=0; i<numbers.length; i++){
-  if(numbers[i] === target){
-    count++
-  }
+//(3) Calculate the sum of all numbers using a loop.
+const numbers4 = [10, 20, 30, 40, 50];
+let sum = 0;
+for (let i = 0; i < numbers4.length; i++) {
+  sum = sum + numbers4[i]; // 0 = 0 + 10, 10 = 10 +20
+  total = sum
 }
-console.log(count)
+console.log(sum)
