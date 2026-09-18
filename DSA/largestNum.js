@@ -207,3 +207,11 @@ for (let i = 0; i < numbers4.length; i++) {
   total = sum
 }
 console.log(sum)
+
+// prints only the even numbers:
+// const numbers = [10, 21, 33, 40, 52, 67, 80];
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 === 0) {
+//     console.log(numbers[i]);
+//   }
+// 
