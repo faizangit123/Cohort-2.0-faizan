@@ -199,19 +199,11 @@
 // }
 // console.log(largest);
 
-//(3) Calculate the sum of all numbers using a loop.
-const numbers4 = [10, 20, 30, 40, 50];
-let sum = 0;
-for (let i = 0; i < numbers4.length; i++) {
-  sum = sum + numbers4[i]; // 0 = 0 + 10, 10 = 10 +20
-  total = sum
-}
-console.log(sum)
 
 // prints only the even numbers:
-// const numbers = [10, 21, 33, 40, 52, 67, 80];
-// for (let i = 0; i < numbers.length; i++) {
-//   if (numbers[i] % 2 === 0) {
-//     console.log(numbers[i]);
-//   }
-// 
+const numbers = [10, 21, 33, 40, 52, 67, 80];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    console.log(numbers[i]);
+  }
+}
