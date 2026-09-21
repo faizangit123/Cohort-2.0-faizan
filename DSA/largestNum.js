@@ -201,9 +201,22 @@
 
 
 // prints only the even numbers:
-const numbers = [10, 21, 33, 40, 52, 67, 80];
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % 2 === 0) {
-    console.log(numbers[i]);
+// const numbers = [10, 21, 33, 40, 52, 67, 80];
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 === 0) {
+//     console.log(numbers[i]);
+//   }
+// }
+
+// count how many times 10 appears.
+
+const numbers = [10, 20, 10, 30, 40, 10, 50];
+const target = 10;
+
+let count = 0;
+for(let i=0; i<numbers.length; i++){
+  if(numbers[i] === target){
+    count++
   }
 }
+console.log(count)
