@@ -208,18 +208,10 @@
 //   }
 // }
 
-// Find whether 40 exists in the array.
-const numbers = [10, 25, 7, 40, 18, 30];
-
-let found = false;
+// prints only the even numbers:
+const numbers = [10, 21, 33, 40, 52, 67, 80];
 for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] === 50) {
-    found = true;
-    break;
+  if (numbers[i] % 2 === 0) {
+    console.log(numbers[i]);
   }
-}
-if (found) {
-  console.log("40 found");
-} else {
-  console.log("40 not found");
 }
