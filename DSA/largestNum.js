@@ -199,10 +199,14 @@
 // }
 // console.log(largest);
 
-// prints only the even numbers:
-const numbers = [10, 21, 33, 40, 52, 67, 80];
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % 2 === 0) {
-    console.log(numbers[i]);
+
+
+// (1) Find the largest number using a loop.
+const numbers2 = [8, 15, 3, 22, 7, 19];
+let largest2 = numbers2[0];
+for (let i = 1; i < numbers2.length; i++) {
+  if (numbers2[i] > largest2) {
+    largest2 = numbers2[i];
   }
 }
+console.log(largest2);
