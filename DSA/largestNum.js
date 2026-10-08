@@ -200,13 +200,20 @@
 // console.log(largest);
 
 
+// searches for a number stored in a variable:
 
-// (1) Find the largest number using a loop.
-const numbers2 = [8, 15, 3, 22, 7, 19];
-let largest2 = numbers2[0];
-for (let i = 1; i < numbers2.length; i++) {
-  if (numbers2[i] > largest2) {
-    largest2 = numbers2[i];
-  }
+const numbers = [10, 25, 7, 40, 18, 30];
+let foundIndex = -1;
+let found = false;
+const target = 18;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] === target) {
+    found = true;
+    foundIndex = i;
+    break;}}
+if (found) {
+  console.log(`${target} found at index ${foundIndex}`);
 }
-console.log(largest2);
+else{
+  console.log(`${target} not found`)
+}
