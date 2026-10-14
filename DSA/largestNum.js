@@ -199,21 +199,15 @@
 // }
 // console.log(largest);
 
+// count how many times 10 appears.
 
-// searches for a number stored in a variable:
+const numbers = [10, 20, 10, 30, 40, 10, 50];
+const target = 10;
 
-const numbers = [10, 25, 7, 40, 18, 30];
-let foundIndex = -1;
-let found = false;
-const target = 18;
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] === target) {
-    found = true;
-    foundIndex = i;
-    break;}}
-if (found) {
-  console.log(`${target} found at index ${foundIndex}`);
+let count = 0;
+for(let i=0; i<numbers.length; i++){
+  if(numbers[i] === target){
+    count++
+  }
 }
-else{
-  console.log(`${target} not found`)
-}
+console.log(count)
