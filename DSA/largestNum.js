@@ -197,16 +197,13 @@
 //     console.log(secondLargest)
 //   }
 // }
-// console.log(largest);
+// console.log(largest)
 
+// let largest1 = numbers1[0];
 
-
-// (1) Find the largest number using a loop.
-const numbers2 = [8, 15, 3, 22, 7, 19];
-let largest2 = numbers2[0];
-for (let i = 1; i < numbers2.length; i++) {
-  if (numbers2[i] > largest2) {
-    largest2 = numbers2[i];
+for (let i = 1; i < numbers1.length; i++) {
+  if (numbers1[i] > largest1) {
+    largest1 = numbers1[i];
   }
 }
-console.log(largest2);
+console.log(largest1);``
