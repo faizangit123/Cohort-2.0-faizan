@@ -199,11 +199,13 @@
 // }
 // console.log(largest)
 
-// let largest1 = numbers1[0];
 
-for (let i = 1; i < numbers1.length; i++) {
-  if (numbers1[i] > largest1) {
-    largest1 = numbers1[i];
+// (2) Find the smallest number using a loop.
+const numbers3 = [8, 15, 3, 22, 7, 19];
+let smallest = numbers3[0];
+for (let i = 1; i < numbers3.length; i++) {
+  if (numbers3[i] < smallest) {
+    smallest = numbers3[i];
   }
 }
-console.log(largest1);``
+console.log(smallest);
