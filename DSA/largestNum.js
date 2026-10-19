@@ -200,12 +200,18 @@
 // console.log(largest)
 
 
-// (2) Find the smallest number using a loop.
-const numbers3 = [8, 15, 3, 22, 7, 19];
-let smallest = numbers3[0];
-for (let i = 1; i < numbers3.length; i++) {
-  if (numbers3[i] < smallest) {
-    smallest = numbers3[i];
+// Find whether 40 exists in the array.
+const numbers = [10, 25, 7, 40, 18, 30];
+
+let found = false;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] === 50) {
+    found = true;
+    break;
   }
 }
-console.log(smallest);
+if (found) {
+  console.log("40 found");
+} else {
+  console.log("40 not found");
+}
