@@ -199,19 +199,14 @@
 // }
 // console.log(largest)
 
+// All of this also called : Tracing loops.
+const numbers1 = [10, 25, 7, 40, 18];
 
-// Find whether 40 exists in the array.
-const numbers = [10, 25, 7, 40, 18, 30];
+let largest1 = numbers1[0];
 
-let found = false;
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] === 50) {
-    found = true;
-    break;
+for (let i = 1; i < numbers1.length; i++) {
+  if (numbers1[i] > largest1) {
+    largest1 = numbers1[i];
   }
 }
-if (found) {
-  console.log("40 found");
-} else {
-  console.log("40 not found");
-}
+console.log(largest1);
