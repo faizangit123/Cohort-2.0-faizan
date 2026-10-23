@@ -210,3 +210,14 @@ for (let i = 1; i < numbers1.length; i++) {
   }
 }
 console.log(largest1);
+
+
+// (1) Find the largest number using a loop.
+const numbers2 = [8, 15, 3, 22, 7, 19];
+let largest2 = numbers2[0];
+for (let i = 1; i < numbers2.length; i++) {
+  if (numbers2[i] > largest2) {
+    largest2 = numbers2[i];
+  }
+}
+console.log(largest2);
