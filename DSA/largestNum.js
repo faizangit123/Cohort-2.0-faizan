@@ -199,25 +199,16 @@
 // }
 // console.log(largest)
 
-// All of this also called : Tracing loops.
-const numbers1 = [10, 25, 7, 40, 18];
 
-let largest1 = numbers1[0];
+// count how many times 10 appears.
 
-for (let i = 1; i < numbers1.length; i++) {
-  if (numbers1[i] > largest1) {
-    largest1 = numbers1[i];
+const numbers = [10, 20, 10, 30, 40, 10, 50];
+const target = 10;
+
+let count = 0;
+for(let i=0; i<numbers.length; i++){
+  if(numbers[i] === target){
+    count++
   }
 }
-console.log(largest1);
-
-
-// (1) Find the largest number using a loop.
-const numbers2 = [8, 15, 3, 22, 7, 19];
-let largest2 = numbers2[0];
-for (let i = 1; i < numbers2.length; i++) {
-  if (numbers2[i] > largest2) {
-    largest2 = numbers2[i];
-  }
-}
-console.log(largest2);
+console.log(count)
