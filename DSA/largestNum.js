@@ -199,11 +199,15 @@
 // }
 // console.log(largest)
 
-// (3) Calculate the sum of all numbers using a loop.
-const numbers4 = [10, 20, 30, 40, 50];
-let sum = 0;
-for (let i = 0; i < numbers4.length; i++) {
-  sum = sum + numbers4[i]; // 0 = 0 + 10, 10 = 10 +20
-  total = sum
+// count how many times 10 appears.
+
+const numbers = [10, 20, 10, 30, 40, 10, 50];
+const target = 10;
+
+let count = 0;
+for(let i=0; i<numbers.length; i++){
+  if(numbers[i] === target){
+    count++
+  }
 }
-console.log(sum)
+console.log(count)
