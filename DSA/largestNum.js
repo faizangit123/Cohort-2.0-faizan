@@ -199,11 +199,19 @@
 // }
 // console.log(largest)
 
-// (4) Print every element using a loop.
 
-const numbers = [10, 20, 30, 40, 50];
+// Find whether 40 exists in the array.
+const numbers = [10, 25, 7, 40, 18, 30];
 
+let found = false;
 for (let i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
+  if (numbers[i] === 50) {
+    found = true;
+    break;
+  }
 }
-//This is called traversing an array.
+if (found) {
+  console.log("40 found");
+} else {
+  console.log("40 not found");
+}
