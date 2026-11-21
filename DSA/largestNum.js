@@ -201,15 +201,22 @@
 
 
 
-// count how many times 10 appears.
+// Duplicates should NOT count
 
-const numbers = [10, 20, 10, 30, 40, 10, 50];
-const target = 10;
+const numbers = [5, 5, 12, 3, 12, 8, 20, 20, 15];
 
-let count = 0;
+let largest = -Infinity;
+let secondLargest = -Infinity;
+
 for(let i=0; i<numbers.length; i++){
-  if(numbers[i] === target){
-    count++
+  if(numbers[i]>largest){
+    secondLargest = largest
+    largest = numbers[i]
+  }
+  else if(numbers[i]>secondLargest && numbers[i]<largest){
+    secondLargest = numbers[i]
   }
 }
-console.log(count)
+
+console.log(largest);
+console.log(secondLargest);
