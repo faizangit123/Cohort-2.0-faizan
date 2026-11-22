@@ -200,23 +200,18 @@
 // console.log(largest)
 
 
+// Find whether 40 exists in the array.
+const numbers = [10, 25, 7, 40, 18, 30];
 
-// Duplicates should NOT count
-
-const numbers = [5, 5, 12, 3, 12, 8, 20, 20, 15];
-
-let largest = -Infinity;
-let secondLargest = -Infinity;
-
-for(let i=0; i<numbers.length; i++){
-  if(numbers[i]>largest){
-    secondLargest = largest
-    largest = numbers[i]
-  }
-  else if(numbers[i]>secondLargest && numbers[i]<largest){
-    secondLargest = numbers[i]
+let found = false;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] === 50) {
+    found = true;
+    break;
   }
 }
-
-console.log(largest);
-console.log(secondLargest);
+if (found) {
+  console.log("40 found");
+} else {
+  console.log("40 not found");
+}
